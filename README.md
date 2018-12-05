@@ -9,7 +9,7 @@ RedShift for Houdini 17 (Support for Arnold and RenderMan might get added at som
 (www.redshift3d.com)
 
 Python 2.7+
-(www.python.com)
+(www.python.org)
 
 Marlamin's WoW OBJ Exporter
 (https://marlam.in/obj)
