@@ -4,10 +4,13 @@ Collection of Python code and Houdini tools dedicated to setting up WoW exports 
 # Requirements
 Houdini 17.0.352+
 (www.sidefx.com)
+
 RedShift for Houdini 17 (Support for Arnold and RenderMan might get added at some point)
 (www.redshift3d.com)
+
 Python 2.7+
 (www.python.com)
+
 Marlamin's WoW OBJ Exporter
 (https://marlam.in/obj)
 
