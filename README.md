@@ -17,7 +17,7 @@ Marlamin's WoW OBJ Exporter
 (https://marlam.in/obj)
 
 # Installation
-  ## wow_asset_loader.hda
+  ## wow_asset_loader.hda & normal_map_generator.hda
   Copy to your prefered Houdini otl folder. Default would typically be: $HOME/houdini17.0/otls
   ## wow_converter.py
   Copy to any location on your system.
