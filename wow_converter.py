@@ -11,6 +11,8 @@ shop    = hou.node("/shop")
 hda     = "wow_asset_loader"
 shad    = "uber_rs"
 
+updateTime = 1544347030
+
 def genProxy(file):
     # Create WoW Loader HDA
     loader = obj.createNode(hda, "loader")
@@ -36,6 +38,12 @@ def loopAllFiles(folder_path, start = 0, inc = 1):
     print "Generating .rs proxy files for " + str(num_objs) + " objects in this directory"
     for idx, item in enumerate(objs, start=0):
         full_path = "/".join([folder_path, item])
+        if os.path.exists(full_path):
+            if (os.path.getmtime(full_path) > updateTime):
+                print "File already exists and up to date. Skipping."
+                return None
+            else:
+                print "File already exists, but is out of date. Regenerating proxy."
         folder_name = os.path.basename(folder_path)
         item_split = item.split("_")[0]
         # Skip any objects that are terrain based on their name starting with the same string as the root folder
