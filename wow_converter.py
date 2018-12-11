@@ -41,7 +41,7 @@ def loopAllFiles(folder_path, start = 0, inc = 1):
         full_path = "/".join([folder_path, item])
         rs_path = os.path.splitext(full_path)[0] + ".rs"
         folder_name = os.path.basename(folder_path)
-        item_split = item.split("_")[0]
+        item_split = os.path.split(item)[-1].split("_")[0]
         if os.path.exists(rs_path):
             # Skip any objects that were modified more recently than the updateTime defined at the top of the script
             if (os.path.getmtime(rs_path) >= updateTime):
