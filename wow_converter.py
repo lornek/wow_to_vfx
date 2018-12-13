@@ -22,8 +22,11 @@ def genProxy(file):
     # for child in loader.node("instancer").children():
     #     child.updateParmStates()
     #     child.cook(force=True)
-    csv_out = loader.node("instancer/output1")
-    num_csv = csv_out.geometry().intrinsicValue("pointcount")
+    # csv_out = loader.node("instancer/output1")
+    # if (csv_out.geometry()!=None):
+    #     num_csv = csv_out.geometry().intrinsicValue("pointcount")
+    # else:
+    #     num_csv = 0
     loader.parm("execute").pressButton()
     hou.Node.destroy(loader)
     for child in shop.children():
