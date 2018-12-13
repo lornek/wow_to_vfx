@@ -17,11 +17,11 @@ def genProxy(file):
     # Create WoW Loader HDA
     loader = obj.createNode(hda, "loader")
     loader.parm("file").set(file)
-    loader.node("file").cook(force=True)
+    # loader.node("file").cook(force=True)
     loader.parm("eval_py").pressButton()
-    for child in loader.node("instancer").children():
-        child.updateParmStates()
-        child.cook(force=True)
+    # for child in loader.node("instancer").children():
+    #     child.updateParmStates()
+    #     child.cook(force=True)
     csv_out = loader.node("instancer/output1")
     num_csv = csv_out.geometry().intrinsicValue("pointcount")
     loader.parm("execute").pressButton()
