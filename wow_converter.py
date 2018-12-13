@@ -11,7 +11,7 @@ shop    = hou.node("/shop")
 hda     = "wow_asset_loader"
 shad    = "uber_rs"
 
-updateTime = 1544347000
+updateTime = 1544735900
 
 def genProxy(file):
     # Create WoW Loader HDA
